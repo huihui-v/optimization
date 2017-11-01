@@ -6,7 +6,6 @@ goldstein2 <- function (x_k, g_k, d_k) {
   rho <- 0.25
   
   res <- step2(fi)
-  #print (res)
   r_left <- res$left
   r_right <- res$right
   mid <- (r_left+r_right)/2

@@ -11,13 +11,6 @@ step2 <- function (fi) {
     s_right <- r_right
     r_left <- (1/2)*r_left
     r_right <- 2*r_right
-    #print (r_left)
-    #print ('|^')
-    #print (s_left)
-    #print (s_right)
-    #print ('|v')
-    #print (r_right)
-    #print ('=====')
     if (fi(r_right) > 0 && fi(s_right) < 0) {
       #print ('case 1')
       res$left <- s_right

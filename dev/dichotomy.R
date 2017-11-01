@@ -31,12 +31,11 @@ dichotomy <- function (f) {
       break
     }
   }
-  #print ('in dichotomy')
-  #print (res)
+
   for (i in 0:999) {
     mid <- (res$left+res$right)/2
+
     if (res$right - res$left <= Epsilon || f(mid) == 0) {
-      #print (mid)
       return (mid)
     } else {
       if (f(mid)*f(res$left) > 0) {
